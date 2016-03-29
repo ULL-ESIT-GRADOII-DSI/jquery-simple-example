@@ -52,12 +52,14 @@ main {
   font-weight: bold;
 }
 
+
 .comment-input button {
   font-weight: bold;
   padding: 3px;
   border-radius: 5px;
   color: ivory;
   background: olivedrab;
+  /* the cursor to turn into a pointing finger when hovering */
   cursor: pointer;
   font-size: 1.5em;
   margin-left: 5px;
