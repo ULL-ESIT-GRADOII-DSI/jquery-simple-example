@@ -12,14 +12,14 @@ For the style we use [sass](http://sass-lang.com/guide).
 
 To compile the style:
 
-```bash
+```shell
 sass style.scss style.css
 ```
 
  In addition, you can watch folders or directories with the `--watch` flag. 
 An example of running Sass while watching an entire directory is the following:
 
-```bash
+```shell
 sass --watch app/sass:public/stylesheets
 ```
 
