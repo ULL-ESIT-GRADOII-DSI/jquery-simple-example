@@ -1,3 +1,5 @@
+$width = 855;
+
 /* Remove the default margin and the padding 
    of all the elements on the page. */
 * {
@@ -6,7 +8,7 @@
 }
 
 body {
-    width: 855px;
+    width: $width px;
     margin: auto;
     background: ivory;
     font-size: 100%;
