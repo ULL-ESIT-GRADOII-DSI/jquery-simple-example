@@ -74,7 +74,9 @@ main {
   border-radius: 5px;
 }
 
-/* We’ve alternated colors for comments. 
+/* A pseudo-class is used to define a special state of an element.
+ *
+ * We’ve alternated colors for comments. 
  * The even-numbered comments are one color, 
  * and the odd- numbered comments are another.
 */
