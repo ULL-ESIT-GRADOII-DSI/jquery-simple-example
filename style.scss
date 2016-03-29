@@ -1,4 +1,6 @@
-$width = 855;
+$width: 855px;
+$rcolumn: 2*$width/3;
+$lcolumn: $width/3;
 
 /* Remove the default margin and the padding 
    of all the elements on the page. */
@@ -8,7 +10,7 @@ $width = 855;
 }
 
 body {
-    width: $width px;
+    width: $width;
     margin: auto;
     background: ivory;
     font-size: 100%;
@@ -27,7 +29,7 @@ h1 {
 
 header p {
   float: right;
-  width: 570px;
+  width: $rcolumn;
   font-style: italic;
   margin-top: 10px;
 }
@@ -41,44 +43,40 @@ main {
 
 .comment-input {
   float: left;
-  width: 285px; /* 1/3 body width*/
+  width: $lcolumn; /* 1/3 body width*/
 }
 
-.comment-input p {
-  margin-bottom: 10px;
-  padding-right: 10px;
-}
+.comment-input {
+  p {
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
 
-.comment-input input {
-  width: 80%;
-  height: 30px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
+  input {
+    width: 80%;
+    height: 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
 
-
-.comment-input button {
-  font-weight: bold;
-  padding: 3px;
-  border-radius: 5px;
-  color: ivory;
-  background: olivedrab;
-  /* the cursor to turn into a pointing finger when hovering */
-  cursor: pointer;
-  font-size: 1.5em;
-  margin-left: 5px;
+  button {
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+    color: ivory;
+    background: olivedrab;
+    /* the cursor to turn into a pointing finger when hovering */
+    cursor: pointer;
+    font-size: 1.5em;
+    margin-left: 5px;
+  }
 }
 
 .comments {
   float: right;
-  width: 570px; /* 2/3 boy width */
+  width: $rcolumn; /* 2/3 boy width */
 }
 
-.comments p {
-  padding: 5px;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
 
 /* A pseudo-class is used to define a special state of an element.
  *
@@ -86,12 +84,20 @@ main {
  * The even-numbered comments are one color, 
  * and the odd- numbered comments are another.
 */
-.comments p:nth-child(even) {
-    background: lavender;
-}
+.comments {
+  p {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
 
-.comments p:nth-child(odd) {
+  p:nth-child(even) {
+    background: lavender;
+  }
+
+  p:nth-child(odd) {
     background: gainsboro;
+  }
 }
 
 footer {
