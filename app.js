@@ -20,6 +20,8 @@ var main = function () {
         }
     };
 
+    /* Attaching an event listener to the DOM element 
+     * referenced in the call to the $ function */
     $(".comment-input button").on("click", function (event) {
         addCommentFromInputBox();
     });
